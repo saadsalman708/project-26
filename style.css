@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+
+header {
+    background-color: #FAFAFA;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.Logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.header2 {
+    background-color: #FEFEFF;
+    height: 60px;
+}
+
+
+@media (max-width: 768px) {
+    .headerForOffcanvas {
+        background-color: #FAFAFA;
+    }
+
+    .header2 {
+        height: auto;
+    }
+
+    /* I put this here so other will find this easily cause its for small screen */
+    .searchSvgForSmallScreen {
+        width: 30px;
+    }
+}
