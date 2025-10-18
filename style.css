@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid;
+    font-family: "Poppins", sans-serif;
+    /* border: 1px solid; */
+}
+
+body {
+    /* background-color: #000; */
 }
 
 
+
+
+
+
+/* header Starts from here */
 header {
     background-color: #FAFAFA;
     height: 90px;
@@ -21,6 +31,48 @@ header {
     background-color: #FEFEFF;
     height: 60px;
 }
+/* header Ends here */
+
+
+
+
+
+/* main Starts from here */
+
+/* hero Starts from here */
+.hero1 {
+    height: 94vh;
+    max-height: auto;
+    background: #CEE5EC;
+    background: linear-gradient(90deg, rgba(206, 229, 236, 1) 0%, rgba(250, 217, 186, 1) 100%);
+}
+
+.hero1>div {
+    width: 45%;
+    padding: 5rem 5rem 0 2.5rem;
+}
+
+h2 {
+    font-size: 67px;
+    font-weight: 600;
+}
+
+.hero1>div>div {
+    width: 78%;
+}
+
+input {
+    height: 3.3rem;
+}
+
+.hero1 img {
+    width: 55%;
+}
+/* hero Ends here */
+/* main Ends here */
+
+
+
 
 
 @media (max-width: 768px) {
