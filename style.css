@@ -6,9 +6,9 @@
     /* border: 1px solid; */
 }
 
-body {
-    /* background-color: #000; */
-}
+/* body { */
+/* background-color: #000; */
+/* } */
 
 
 
@@ -31,6 +31,7 @@ header {
     background-color: #FEFEFF;
     height: 60px;
 }
+
 /* header Ends here */
 
 
@@ -39,7 +40,11 @@ header {
 
 /* main Starts from here */
 
-/* hero Starts from here */
+main {
+    gap: 5rem;
+}
+
+/* hero1 Starts from here */
 .hero1 {
     height: 94vh;
     max-height: auto;
@@ -58,7 +63,7 @@ h2 {
 }
 
 .hero1>div>div {
-    width: 78%;
+    width: 92%;
 }
 
 input {
@@ -68,7 +73,23 @@ input {
 .hero1 img {
     width: 55%;
 }
-/* hero Ends here */
+
+/* hero1 Ends here */
+
+
+
+/* hero2 Starts from here */
+.hero2 img {
+    width: 4rem;
+}
+
+/* hero2 Ends here */
+
+
+.hero3-CardsImgdiv img {
+    width: 120%;
+}
+
 /* main Ends here */
 
 
