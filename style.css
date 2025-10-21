@@ -85,6 +85,11 @@ input {
 
 /* hero2 Ends here */
 
+.hero3-CardsImgdiv {
+    aspect-ratio: 2/1;
+    background: #C1DEE8;
+    background: linear-gradient(90deg, rgba(193, 222, 232, 1) 0%, rgba(255, 255, 255, 1) 67%, rgba(251, 217, 185, 1) 100%);
+}
 
 .hero3-CardsImgdiv img {
     width: 120%;
