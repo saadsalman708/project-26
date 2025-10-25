@@ -3,20 +3,33 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    /* border: 1px solid; */
+    font-size: clamp(0.1rem, 2vw + 0.5rem, 16px);
 }
 
 
 
 /* header Starts from here */
+
+@keyframes downEffect {
+    from {
+        padding-top: 70px;
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+    
+    to {
+        padding-top: 0;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 header {
     background-color: #FAFAFA;
-    height: 90px;
+    height: 14vh;
     border-radius: 50px;
+    animation: downEffect 0.4s ease;
 }
 
 .Logo img {
@@ -24,7 +37,7 @@ header {
     height: auto;
 }
 
-.header2 {
+.headerdiv2 {
     background-color: #FEFEFF;
     height: 60px;
 }
@@ -43,44 +56,102 @@ main {
 
 /* hero1 Starts from here */
 .hero1 {
-    height: 94vh;
+    height: 91vh;
     max-height: auto;
     background: #CEE5EC;
     background: linear-gradient(90deg, rgba(206, 229, 236, 1) 0%, rgba(250, 217, 186, 1) 100%);
 }
 
-.hero1>div {
-    width: 45%;
-    padding: 5rem 5rem 0 2.5rem;
+@keyframes swipeRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero1 p:first-of-type {
+    animation: swipeRight 0.3s ease forwards;
 }
 
 h2 {
-    font-size: 67px;
+    font-size: clamp(2rem, 3vw + 1rem, 67px);
     font-weight: 600;
+    animation: swipeRight 0.4s ease forwards;
+}
+
+.hero1 p {
+    animation: swipeRight 0.5s ease forwards;
 }
 
 .hero1>div>div {
-    width: 92%;
+    animation: swipeRight 0.6s ease forwards;
 }
 
 input {
     height: 3.3rem;
 }
 
+
+.hero1div1 {
+    padding: 0 3.5rem 0.5rem 3rem;
+}
+
+
+@keyframes effect {
+
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero1 img {
-    width: 55%;
+    animation: effect 0.5s ease forwards;
 }
 
 /* hero1 Ends here */
 
 
 
+
+
 /* hero2 Starts from here */
+
+h3 {
+    font-size: clamp(1.8rem, 2vw + 1rem, 50px);
+    font-weight: 600;
+}
+
 .hero2 img {
     width: 4rem;
 }
 
 /* hero2 Ends here */
+
+
+
+
+
+/* hero3 Starts from here */
+
+.card-width {
+    width: 447px;
+    scroll-behavior: smooth;
+}
+
+.d-flex::-webkit-scrollbar {
+    display: none;
+}
 
 .hero3-CardsImgdiv {
     aspect-ratio: 1/.6;
@@ -89,49 +160,67 @@ input {
 }
 
 .hero3-CardsImgdiv img {
-    width: 100%;
     transform: translateY(-75px);
 }
 
 
 
 .star {
-  width: 18px;
-  height: 18px;
-  background: #F59914;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+    width: 18px;
+    height: 18px;
+    background: #F59914;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
 }
 
-.star-Border {
-  width: 18px;
-  height: 18px;
-  background: rgb(162, 162, 162);
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+.star-Grey {
+    width: 18px;
+    height: 18px;
+    background: rgb(162, 162, 162);
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
 }
 
+/* hero3 Ends here */
 
+
+
+
+
+/* hero5 Starts from here */
+
+.hero5 {
+    height: 69vh;
+    max-height: auto;
+    background: #CEE5EC;
+    background: linear-gradient(90deg, rgba(206, 229, 236, 1) 0%, rgba(250, 217, 186, 1) 100%);
+}
+
+.hero5>div>div {
+    width: 75%;
+}
+
+.hero5 img {
+    transform: translateY(-32px) scale(1.13);
+}
+
+/* hero5 Ends here */
 
 /* main Ends here */
 
@@ -140,11 +229,13 @@ input {
 
 
 @media (max-width: 768px) {
+
+    /* header Start from here */
     .headerForOffcanvas {
         background-color: #FAFAFA;
     }
 
-    .header2 {
+    .headerdiv2 {
         height: auto;
     }
 
@@ -152,4 +243,76 @@ input {
     .searchSvgForSmallScreen {
         width: 30px;
     }
+
+    /* header Ends here */
+
+
+
+
+
+    /* hero1's and hero5's height adjustment for gradient background */
+    .hero1, .hero5 {
+        height: auto;
+    }
+
+
+
+
+
+    /* hero3 Starts from here */
+    .hero3 button {
+        transform: scale(0.6);
+    }
+    /* hero3 Ends here */
+
+
+
+
+
+    /* hero5 Starts from here */
+    .hero5>div>div {
+        width: 94%;
+    }
+    /* hero5 Ends here */
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    /* hero1 Start from here */
+    .hero1div1 {
+        padding: 3rem 1rem 0.5rem 1.5rem;
+    }
+
+    /* hero1 Ends here */
+
+
+
+
+
+    /* hero3 Start from here */
+    .card-width {
+        width: 75vw;
+    }
+
+    /* hero3 Ends here */
+
+
+
+
+
+    /* hero5 Start from here */
+    .hero5 img {
+        transform: translateY(0px) scale(1);
+    }
+
+    /* hero5 Ends here */
 }

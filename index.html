@@ -13,7 +13,7 @@
 <body class="mx-4">
 
   <!-- header Starts from here -->
-  <header class="navbar navbar-expand-lg bg-body-tertiary my-4 px-5">
+  <header class="navbar navbar-expand-lg bg-body-tertiary my-4 px-4 px-md-5 px-lg-5">
     <div class="Logo w-25">
       <a href="#">
         <img src="assets/Logo.webp" alt="BUILD">
@@ -32,23 +32,26 @@
           <a href="#" class="header1 navbar-brand fs-1 fw-bolder">BUILD</a>
           <a href="#"><img class="searchSvgForSmallScreen" src="assets/search-normal.svg"></a>
         </div>
-
+        
         <div
-          class="header2 rounded-5 d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-center mx-auto mt-3 mt-md-0 mt-lg-0">
-          <ul class="list-unstyled d-md-flex d-lg-flex justify-content-around align-items-center gap-4 mx-4 mb-0">
-            <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">About us</a></li>
-            <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Project</a></li>
-            <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Agents</a></li>
-            <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Services</a></li>
-            <li><a href="#" class="text-decoration-none text-black">Listing</a></li>
-            <li class="d-none d-md-flex d-lg-flex"><a href="#"><img src="assets/search-normal.svg"></a></li>
-          </ul>
-        </div>
-
-        <div class="header3 d-flex justify-content-between align-items-center ms-4">
-          <a href="#" class="text-decoration-none text-black me-5 ms-3">Other services</a>
-          <a href="#" class="text-decoration-none text-black btn btn-outline-secondary rounded-5 px-4 py-3">Contact
-            us</a>
+        class="headerdiv2 rounded-5 d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-center mx-auto mt-3 mt-md-0 mt-lg-0">
+        <ul class="list-unstyled d-md-flex d-lg-flex justify-content-around align-items-center gap-4 mx-4 mb-0">
+          <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">About us</a></li>
+          <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Project</a></li>
+          <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Agents</a></li>
+          <li class="mb-3 mb-md-0 mb-lg-0"><a href="#" class="text-decoration-none text-black">Services</a></li>
+          <li><a href="#" class="text-decoration-none text-black">Listing</a></li>
+          <li class="d-none d-md-flex d-lg-flex"><a href="#"><img src="assets/search-normal.svg"></a></li>
+        </ul>
+      </div>
+      
+      <div
+      class="d-flex flex-column flex-md-row flex-lg-row justify-content-md-between justify-content-lg-between align-items-md-center align-items-lg-center gap-3 gap-md-0 gap-lg-0 ms-2 ms-md-4 ms-lg-4 mt-3 mt-md-0 mt-lg-0">
+      <a href="#" class="text-decoration-none text-black ms-3 me-5">Other services</a>
+      <a href="#"
+      class="text-decoration-none text-black btn btn-outline-secondary rounded-5 px-4 py-3 me-5 me-md-0 me-lg-0">Contact
+      us</a>
+      <a href="#" class="text-decoration-none d-block d-sm-none d-md-none d-lg-none fw-bold fs-6 align-self-end m-4" data-bs-dismiss="offcanvas">Close Menu</a>
         </div>
       </div>
     </div>
@@ -60,24 +63,26 @@
 
 
   <!-- main Starts from here -->
-  <main class=" m-md-2 m-lg-2 d-flex flex-column">
+  <main class="d-flex flex-column m-md-2 m-lg-2">
 
-    <div class="hero1 rounded-4 d-flex flex-wrap">
+    <!-- hero1 Starts from here -->
+    <div class="hero1 rounded-4 row d-flex flex-wrap justify-content-between">
 
-      <div>
+      <!-- hero1div1 Starts from here -->
+      <div
+        class="hero1div1 col-md-5 col-lg-5 col-xl-5 d-flex flex-column justify-content-center mb-md-5 mb-lg-5 pb-md-5 pb-lg-5">
         <p>Welcome to Realstate</p>
-        <h2>Manage Your Property</h2>
+        <h2 class="mb-3">Manage Your Property</h2>
         <p>Your will have everything nearby supermarket, buses, station, the carmen neighborhood, etc</p>
-        <div class="input-group mt-3 mb-3 bg-white rounded-5">
-          <input type="email" class="form-control border-0 rounded-5 ms-2 fs-6" placeholder="Enter your email"
+        <div class="input-group bg-white rounded-5 my-3">
+          <input type="email" class="form-control border-0 rounded-5 fs-6 ms-2" placeholder="Enter your email"
             aria-describedby="button-addon2">
-          <button class="btn btn-dark rounded-5 fw-bold fs-6 px-3" type="button" id="button-addon2">Get a Quote</button>
+          <button class="btn btn-dark rounded-5 fw-bold fs-6 px-3" type="submit" id="button-addon2">Get a Quote</button>
         </div>
       </div>
 
-      <div class="">
-        <img src="assets/hero-house-png.png">
-      </div>
+      <!-- hero1div2 Start from here -->
+      <img class="col-md-7 col-lg-7 col-xl-7 p-0 ps-4" width="700px" src="assets/hero-house-png.png">
     </div>
     <!-- hero1 Ends here -->
 
@@ -88,31 +93,31 @@
     <!-- hero2 Starts from here -->
     <div class="hero2 d-flex flex-column align-items-center">
       <p class="mb-1">Three steps. Three minutes.</p>
-      <p class="fs-1 fw-bolder">Everything should be this easy.</p>
+      <h3>Everything should be this easy.</h3>
 
-      <!-- hero2 Cards Starts from here -->
-      <div class="d-flex justify-content-between row mt-4">
+      <!-- hero2 Cards parent div Starts from here -->
+      <div class="d-flex justify-content-between row gap-4 gap-md-0 gap-lg-0 mt-4">
 
-        <div class="col-4 d-flex flex-column gap-3 text-start px-5">
+        <div class="col-12 col-md-4 col-lg-4 d-flex flex-column gap-3 px-4 px-md-5 px-lg-5">
           <img src="assets/messages.svg">
           <h4 class="fw-bold">Answer questions</h4>
           <p class="lh-sm">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum.</p>
         </div>
 
-        <div class="col-4 d-flex flex-column gap-3 text-start px-5">
+        <div class="col-12 col-md-4 col-lg-4 d-flex flex-column gap-3 px-4 px-md-5 px-lg-5">
           <img src="assets/sms-tracking.svg">
           <h4 class="fw-bold">Select a quote</h4>
           <p class="lh-sm">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum.</p>
         </div>
 
-        <div class="col-4 d-flex flex-column gap-3 text-start px-5">
+        <div class="col-12 col-md-4 col-lg-4 d-flex flex-column gap-3 px-4 px-md-5 px-lg-5">
           <img src="assets/edit-2.png">
           <h4 class="fw-bold">Get registered</h4>
           <p class="lh-sm">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum.</p>
         </div>
 
       </div>
-      <!-- hero2 Cards Ends here -->
+      <!-- hero2 Cards parent div Ends here -->
 
     </div>
     <!-- hero2 Ends here -->
@@ -121,22 +126,22 @@
 
 
     <!-- hero3 Starts form here -->
-    <div class="hero3 px-3">
+    <div class="hero3 px-0 px-md-3 px-lg-3">
       <p>Best Project of the Years</p>
-      <div class="d-flex justify-content-between mb-4">
-        <h2 class="fs-1">Our recent projects</h2>
-        <div>
-          <button class="rounded-circle border-0 p-2 bg-white"><img src="assets/arrow-left.svg"></button>
-          <button class="rounded-circle border-0 p-2 bg-black shadow-lg"><img src="assets/arrow-right-1.svg"></button>
+      <div class="d-flex justify-content-md-between justify-content-lg-between row mb-4">
+        <h3 class="col-8 col-md-8">Our recent projects</h3>
+        <div class="d-flex col-1 col-md-3">
+          <button class="bg-white rounded-circle border-0 p-2"><img src="assets/arrow-left.svg"></button>
+          <button class="bg-black rounded-circle border-0 px-4 px-sm-2 px-md-3 px-lg-3"><img src="assets/arrow-right-1.svg"></button>
         </div>
       </div>
 
-      <!-- hero3 Cards Starts from here -->
-      <div class="d-flex gap-3">
+      <!-- hero3 Card's div Starts from here -->
+      <div class="d-flex flex-nowrap gap-3 overflow-x-auto">
 
-        <div class="card rounded-3">
+        <div class="card card-width p-0 rounded-3 flex-shrink-0">
           <div class="hero3-CardsImgdiv w-100 overflow-hidden rounded-3">
-            <img src="assets/house2.png" class="card-img-top" alt="...">
+            <img src="assets/house2.png" class="card-img-top">
           </div>
           <div class="card-body">
             <h5 class="card-title fw-bold">Sobha Hearland II Villas</h5>
@@ -146,15 +151,15 @@
               <div class="star"></div>
               <div class="star"></div>
               <div class="star"></div>
-              <div class="star-Border"></div>
+              <div class="star-Grey"></div>
               <p class="mb-0 ps-2">4.83</p>
             </div>
           </div>
         </div>
 
-        <div class="card p-0 rounded-3">
+        <div class="card card-width p-0 rounded-3 flex-shrink-0">
           <div class="hero3-CardsImgdiv w-100 overflow-hidden rounded-3 position-relative">
-            <img src="assets/house3.jpg" class="card-img-top position-absolute" alt="...">
+            <img src="assets/house3.avif" class="card-img-top position-absolute">
           </div>
           <div class="card-body">
             <h5 class="card-title fw-bold">Sobha Hearland II Villas</h5>
@@ -164,15 +169,15 @@
               <div class="star"></div>
               <div class="star"></div>
               <div class="star"></div>
-              <div class="star-Border"></div>
+              <div class="star-Grey"></div>
               <p class="mb-0 ps-2">4.83</p>
             </div>
           </div>
         </div>
 
-        <div class="card p-0 rounded-3">
+        <div class="card card-width p-0 rounded-3 flex-shrink-0">
           <div class="hero3-CardsImgdiv w-100 overflow-hidden rounded-3 position-relative">
-            <img src="assets/house4.jpg" class="card-img-top position-absolute" alt="...">
+            <img src="assets/house4.jpg" class="card-img-top position-absolute">
           </div>
           <div class="card-body">
             <h5 class="card-title fw-bold">Sobha Hearland II Villas</h5>
@@ -182,7 +187,7 @@
               <div class="star"></div>
               <div class="star"></div>
               <div class="star"></div>
-              <div class="star-Border"></div>
+              <div class="star-Grey"></div>
               <p class="mb-0 ps-2">4.83</p>
             </div>
           </div>
@@ -199,37 +204,39 @@
 
     <!-- hero4 Starts from here -->
     <div class="px-md-5 px-lg-5">
-      <h3 class="fs-1 fw-bold text-center">We are a global, boutique real <br />estate brokerage</h3>
+      <h3 class="text-center pb-3">We are a global, boutique real <br />estate brokerage</h3>
 
       <!-- <div class="d-flex flex-wrap-reverse flex-md-nowrap flex-lg-nowrap mt-5"> -->
-      <div class="d-flex justify-content-between flex-wrap-reverse flex-md-nowrap flex-lg-nowrap row mt-md-5 mt-lg-4">
+      <div class="d-flex justify-content-between flex-wrap-reverse flex-md-nowrap flex-lg-nowrap row mt-md-5 mt-lg-5">
         <div class="col-md-5 col-lg-5 col-xl-5 d-flex flex-column justify-content-center">
           <h4 class="fs-2 fw-bold mb-3">The transfer of real estate</h4>
-          <p>Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc. Tellus consequat nisl quis nisl justo.</p>
-          
+          <p>Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus
+            lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc.
+            Tellus consequat nisl quis nisl justo.</p>
+
           <div class="d-flex gap-3 my-md-5 my-lg-5">
             <button class="btn btn-dark rounded-5 px-3 px-md-4 px-lg-4 py-3 fw-bold">Book Now!</button>
             <button class="btn btn-outline-secondary text-black rounded-5 px-3 px-md-4 px-lg-4 py-3">Read More</button>
           </div>
 
-          <div class="d-flex justify-content-between mt-3">
+          <div class="d-flex justify-content-between mt-5 mt-md-3 mb-lg-3">
             <div>
               <h2 class="mb-0">12+</h2>
-              <p class="ps-2">Customers</p>
+              <p class="ps-1">Customers</p>
             </div>
             <div>
               <h2 class="mb-0">14+</h2>
-              <p class="ps-3">Offices</p>
+              <p class="ps-md-2 ps-lg-2">Offices</p>
             </div>
             <div>
               <h2 class="mb-0">10+</h2>
-              <p class="ps-3">Students</p>
+              <p class="ps-md-2 ps-lg-2">Students</p>
             </div>
           </div>
-          
+
         </div>
 
-        <div class="col-md-6 col-lg-6 col-xl-6">
+        <div class="col-md-6 col-lg-6 col-xl-6 my-5 my-md-0 my-lg-0">
           <img class="w-100" src="assets/real-state-img1.jpg">
         </div>
       </div>
@@ -241,21 +248,25 @@
 
 
     <!-- hero5 Starts from here -->
-    <div class="hero4">
-      <h2>Subscribe Our Newsletter</h2>
-      <p>Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc.</p>
-      <div class="input-group mb-3 bg-white rounded-5">
-        <input type="text" class="form-control border-0 rounded-5" placeholder="Enter your email"
-          aria-describedby="button-addon2">
-        <button class="btn btn-dark rounded-5" type="button" id="button-addon2">Get a Quote</button>
+    <div class="hero5 rounded-4 d-flex row justify-content-between">
+
+      <div class="col-md-6 col-lg-6 d-flex flex-column mt-4 mt-md-5 mt-lg-5 mb-3 mb-md-0 mb-lg-0 ms-2 ms-md-4 ms-lg-4 pt-3">
+        <h3>Subscribe Our Newsletter</h3>
+        <p class="mb-4 mb-md-4 mb-lg-4 pb-0 pb-md-3 pb-lg-3 pt-2 pt-md-0 pt-lg-0 pe-2 pe-md-5 pe-lg-5">Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus
+          lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc.</p>
+        <div class="input-group mb-0 mb-md-3 mb-lg-3 bg-white rounded-5">
+          <input type="text" class="form-control border-0 rounded-5" placeholder="Enter your email"
+            aria-describedby="button-addon2">
+          <button class="btn btn-dark rounded-5 fw-bold" type="button" id="button-addon2">Get a Quote</button>
+        </div>
       </div>
 
-      <img class="w-100" src="assets/house4.jpg">
+      <img class="col-md-5 col-lg-5" src="assets/house5.avif.crdownload">
     </div>
     <!-- hero5 Ends here -->
 
   </main>
-    <!-- main Ends here -->
+  <!-- main Ends here -->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
